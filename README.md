@@ -1,2 +1,0 @@
-# SpringDataJPA
-Spring Data JPA
