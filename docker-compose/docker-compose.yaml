@@ -1,0 +1,22 @@
+version: '2'
+services:
+  postgres:
+    container_name: postgres
+    build: ./postgres/
+    ports:
+     - 5432:5432
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+  pgadmin:
+    container_name: pgadmin
+    build: ./pgadmin/
+    ports:
+      - 8889:80
+    environment:
+        PGADMIN_DEFAULT_EMAIL: test@postgresql.org
+        PGADMIN_DEFAULT_PASSWORD: postgres
+    links:
+      - postgres
+    logging:
+      driver: "none"

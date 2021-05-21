@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestConfiguration
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+TestConfiguration.testConnection()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.pankaj.springjpa.data.repository.ChessPlayerJpaRepository.findAll()" because "this.playerRepo" is null
+	at TestConfiguration.testConnection(TestConfiguration.java:30)
+

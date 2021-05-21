@@ -1,0 +1,7 @@
+To run the docker-compose command, please make sure that docker is installed on your machine before you download and extract the docker-compose configuration. You can then start the environment by executing the following commands in the folder that contains your docker-compose configuration:
+
+• docker-compose build
+• docker-compose up
+
+After you started the docker-compose configuration, you can access your database at localhost:5432 using the user postgres and the password postgres. And you can access pgAdmin on localhost:80 using the username test@postgresql.org and the password postgres.
+
